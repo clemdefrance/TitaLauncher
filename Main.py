@@ -1,13 +1,10 @@
-from tkinter import *
+import customtkinter
 
-root = Tk()
-root.geometry("800x600")  
+root = customtkinter.CTk()
 root.title("TitanoLauncher")
+root.geometry("500x500")
+Btu = customtkinter.button(window = root, command = launch, text = "button")
 
-#background
-background_image = PhotoImage(file="background.png")
-background_label = Label(root, image=background_image)
-background_label.place(relwidth=1, relheight=1)
+def launch():
 
-root.mainloop()
-
+     root.mainloop()
